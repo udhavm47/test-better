@@ -1,5 +1,6 @@
 import React from 'react';
 import './Css/start.css';
+import 'safari-pinned-tab.svg' from "./images";
 
 const Start = () => {
     return (
@@ -16,12 +17,14 @@ const Start = () => {
 
             <main className="main">
                 <div className="profile">
+                    <img src="safari-pinned-tab.svg" alt="svg-file">
                     <img src="profile.jpg" alt="Betty" className="profile-pic" />
                     <h1>Hi, I'm Betty!</h1>
                     <p>What can I help you with?</p>
                 </div>
 
                 <div className="options">
+                    <img src="safari-pinned-tab.svg" alt="svg-file">
                     <button className="option">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon">
                             <path d="M3 12l2-2m0 0l7-7 7 7m-7 7v6"></path>
